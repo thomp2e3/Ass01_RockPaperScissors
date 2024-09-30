@@ -28,7 +28,7 @@ public class Main
                 System.out.println("Rock beats Scissors... Player 1 wins");
             }
 
-        else if (play1.equalsIgnoreCase("P"))
+        if (play1.equalsIgnoreCase("P"))
             if (play2.equalsIgnoreCase("R"))
             {
                 System.out.println("Paper beats Rock... Player 1 wins!");
@@ -42,7 +42,7 @@ public class Main
                 System.out.println("Scissors beats Paper... Player 2 wins");
             }
 
-        else if (play1.equalsIgnoreCase("S"))
+        if (play1.equalsIgnoreCase("S"))
             if (play2.equalsIgnoreCase("R"))
             {
                 System.out.println("Rock beats Scissors... Player 2 wins!");
@@ -55,5 +55,7 @@ public class Main
             {
                 System.out.println("Scissors vs Scissors... Game is a tie!");
             }
+        else
+                System.out.println("Invalid move! Run the program again!");
         }
-    }
+}
